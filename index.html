@@ -1,0 +1,32 @@
+Tu acertou mesmo, difícil?
+<h3>Gostaria de jogar mais? Aperta F5 e tenta de novo!</h3>
+ 
+<strong>Mas, relaxa!</strong> Esse é só o começo do meu código.
+ 
+Quer me conhecer melhor? Olha isso aqui:
+<a href="https://www.instagram.com/henryque_semque/">Meu gramgram</a>!
+
+<script>
+let numeroSecreto = 8;
+let tentativas = 1;
+let chute;
+
+alert('Boas vindas ao jogo do número secreto');
+
+while (chute != numeroSecreto) {
+     let chute = prompt('Escolha um número entre 1 e 10')
+     if (chute == numeroSecreto) {
+         break
+     } else {
+         if (chute > numeroSecreto) {
+             alert('O número secreto é menor')
+         } else {
+             alert('O número secreto é maior')
+         }
+     }
+     tentativas++
+ }
+ let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa' 
+ alert(`O número secreto era ${numeroSecreto} e você acertou com apenas ${tentativas} ${palavraTentativa}`)
+ console.log("ta fazeno oq aqui?");
+</script>
